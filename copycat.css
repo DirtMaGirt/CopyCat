@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#wrapper {
+    width: 95%;
+    height: 800px;
+    border: black 2px solid;
+    background: ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden scroll;
+}
+
+#header {
+    display: flex;
+    width: 98%;
+    height: 50px;
+    border: black solid 2px;
+    padding: 0px;
+    background: ;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#main_content {
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    height: 800px;
+    padding: 0px;
+    background: ;
+    margin-top: 10px;
+    justify-content: center;
+    overflow: hidden scroll;
+}
