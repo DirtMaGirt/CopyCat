@@ -5,34 +5,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CopyCat</title>
+    <title>Document</title>
     <link rel="stylesheet" type="text/css" href="copycat.css">
+    <link rel="stylesheet" type="text/css" href="Nav_Bar.css">
 </head>
 
 <body>
-    <div class="light" id="wrapper">
-        <div class="light" id="header">
+    <!-- begins the navigation-->
+    <div id="Navigation" class="Navigation">
+        <div class="closebtn"><a href="javascript:void(0)" class="" onclick="closeNav()">☰</a>
         </div>
+        <div class="menu_items">
+            <a href="#">Home</a>
+            <a href="#">Projects</a>
+            <a href="#">Articles</a>
+            <a href="#">Resources</a>
+        </div>
+    </div>
+    <!-- ends the navigation-->
+
+
+    <!--begin the Main Content-->
+    <div id="wrapper">
+        <!--begin the Header Content-->
+        <div id="header">
+            <div id="button"> <button class="openbtn" onclick="openNav()">☰</button></div>
+            <div id="search_bar"></div>
+            <div id="social_buttons"> </div>
+        </div>
+        <!--End the Header Content-->
         <div id="main_content">
-            <div class="light" id="section_1">
-
-
+            <div class="box_head">
+                <div class="note_div"><img src="">
+                <div class="media_top"><img src=""></div>
+                <div class="media_btm"><img src=""></div>
                 </div>
-           
-            <div class="light" id="section_2">
-                <div class="light" id="content_div">
-                 <div class="light" id="content_top"> <img src="images/img-1.jpg"> </div>
-                 <div class="light" id="mid"><p>Will Ferral - How I Became A Pimp</p></div>
-                 <div class="light" id="content_footer"></div>
-                 
-                 </div>
-                 
+
             </div>
-            <div class="light" id="section_3"></div>
+            <div class="box_content">
+                <div class="note_div"><img src=""></div>
+                <div class="note_div"><img src=""></div>
+                <div class="note_div"><img src=""></div>
+                <div class="note_div"><img src=""></div>
+            </div>
+            <div class="box_content">
+                <div class="note_div"><img src=""></div>
+                <div class="note_div"><img src=""></div>
+                <div class="note_div"><img src=""></div>
+                <div class="note_div"><img src=""></div>
+                <div class="note_div"><img src=""></div>
+            </div>
+
 
         </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("Navigation").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("Navigation").style.width = "0";
+            }
+        </script>
+
+
 
     </div>
+    <!--ends the Main Content-->
 </body>
 
 </html>

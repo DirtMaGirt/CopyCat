@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+
+.light body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    border: black 2px solid;
+  
+}
+
+.light > div{
+    border: black 2px solid;
+    margin-bottom: 10px;
+}
+
+#header { 
+width: 100%;
+height: 50px;
+display: flex;
+
+}
+
+
+}
+
+    body {
+        margin: 40px;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+
+    .content {
+        grid-area: content;
+    }
+
+
+    .wrapper {
+        background-color: #fff;
+        color: #444;
+    }
+
+  .wrapper {
+    display: grid;
+    min-height: 730px;
+width: 100%;
+    grid-gap: 1em;
+    grid-template-areas:
+     "sidebar"
+     "content"
+   
+  }
+
+    @media only screen and (min-width: 300px)  {
+    .wrapper {
+
+        grid-template-columns: 150px 400px;
+        grid-template-rows: 700px;
+        overflow: hidden scroll;
+        grid-template-areas:
+        "sidebar  content"
+      ;
+    }
+    }
+
+    @media only screen and (min-width: 600px)   {
+        .wrapper {
+      grid-gap: 5px;
+            grid-template-columns: 150px 1fr;
+            grid-template-rows: 700px;
+            grid-template-areas:
+            "sidebar content";
+        
+        }
+    }
+
+.box {
+border: 2px black solid;
+margin: 10px
+}
+
+body {
+  margin: 40px;
+}
+
+.wrapper_2 {
+        display: grid;
+    grid-gap: 10px;
+        grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px  ;
+        grid-template-rows: [row] auto [row] auto [row] ;
+        background-color: #green;
+        color: #444;
+        width:  400px;
+    }
+
+    .box_2 {
+        background-color: #444;
+        color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+
+    }
+
+    .a {
+        grid-column: col / span 2;
+        grid-row: row / span 2 ;
+    }
+    .b {
+        grid-column: col 3 / span 2 ;
+        grid-row: row ;
+    }
+    .c {
+        grid-column: col 4 ;
+        grid-row: row 2 ;
+    }
+    .d {
+        grid-column: col  3  ;
+        grid-row: row 2 ;
+    }
+
+  
+
